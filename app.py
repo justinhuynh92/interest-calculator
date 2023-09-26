@@ -17,6 +17,7 @@ def main():
     #calculate monthly payments
     monthly_payment = principal * monthly_interest_rate / (1 - (1 + monthly_interest_rate) ** (-amount_of_months))
 
-    print('The monthly payment for this lone is: ' + str(monthly_payment))
+    #cut result to 2 decimal places with .2f
+    print('The monthly payment for this lone is: %.2f' % monthly_payment)
 
 main()
